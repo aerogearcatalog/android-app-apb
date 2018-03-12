@@ -1,3 +1,9 @@
 # Delete android app representation using the mobile cli
+- name: "Check if {{ appName }} client exists"
+  shell: mobile get client {{ appName }}-android --namespace={{ namespace }} -o=json
+  register: mobile_client
+  ignore_errors: yes
+
 - name: "Delete android app representation"
   shell: mobile delete client {{ appName }}-android --namespace={{ namespace }}
+  when: mobile_client.stderr == ""
