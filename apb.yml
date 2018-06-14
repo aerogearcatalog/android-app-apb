@@ -9,6 +9,7 @@ metadata:
   displayName: Android App
   console.openshift.io/iconClass: fa fa-android
   documentationUrl: "http://docs.aerogear.org"
+  serviceName: android-app
 plans:
   - name: default
     description: Sets up an Android App representation.
