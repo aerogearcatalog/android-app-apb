@@ -8,7 +8,7 @@ tags:
 metadata:
   displayName: Android App
   console.openshift.io/iconClass: fa fa-android
-  documentationUrl: "http://docs.aerogear.org"
+  documentationUrl: "http://docs.aerogear.org/external/apb/android-app.html"
   serviceName: android-app
 plans:
   - name: default
